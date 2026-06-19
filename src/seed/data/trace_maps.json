@@ -1,0 +1,114 @@
+[
+  {
+    "id": "hypervigilance",
+    "title": "Hypervigilance",
+    "nodes": {
+      "pattern": "Staying alert and scanning for what might go wrong",
+      "emotion": "An underlying sense of unease, even when things are calm",
+      "adaptation": "Learning to read rooms and predict danger early",
+      "origin": "Environments where safety felt unpredictable"
+    },
+    "glossary_terms": ["hypervigilance", "nervous_system_activation", "safety_seeking"],
+    "strengths": ["Highly attuned to others", "Quick to notice problems early", "Dependable in a crisis"],
+    "future": "As safety grows, the alertness can soften into discernment you choose to use, rather than a state you live in.",
+    "reflection": "Where in your life do you feel safe enough to let your guard down, even a little?"
+  },
+  {
+    "id": "people_pleasing",
+    "title": "People Pleasing",
+    "nodes": {
+      "pattern": "Putting others' needs and comfort ahead of your own",
+      "emotion": "Fear of disappointing people or causing upset",
+      "adaptation": "Keeping the peace to stay connected and safe",
+      "origin": "Relationships where love or calm felt conditional"
+    },
+    "glossary_terms": ["people_pleasing", "fawn_response", "conditional_acceptance"],
+    "strengths": ["Deeply empathic", "Skilled at smoothing tension", "Generous and attentive"],
+    "future": "Your care for others can stay, with room added for your own needs to count too.",
+    "reflection": "What would it feel like to say what you want, even if it might disappoint someone?"
+  },
+  {
+    "id": "emotional_suppression",
+    "title": "Emotional Suppression",
+    "nodes": {
+      "pattern": "Pushing feelings down rather than letting them surface",
+      "emotion": "A sense that emotions are unsafe or unwelcome",
+      "adaptation": "Containing feelings to stay functional and accepted",
+      "origin": "Settings where emotions were dismissed or punished"
+    },
+    "glossary_terms": ["emotional_suppression", "alexithymia", "emotional_invalidation"],
+    "strengths": ["Steady under pressure", "Thoughtful and self-controlled", "Reliable when others fall apart"],
+    "future": "Containment can become a choice rather than a reflex, with space to feel when it's safe.",
+    "reflection": "When did you last let yourself fully feel something, and what was that like?"
+  },
+  {
+    "id": "difficulty_trusting",
+    "title": "Difficulty Trusting Others",
+    "nodes": {
+      "pattern": "Keeping a part of yourself guarded in relationships",
+      "emotion": "An expectation that closeness may lead to hurt",
+      "adaptation": "Relying on yourself to avoid being let down",
+      "origin": "Early bonds where trust was broken or unreliable"
+    },
+    "glossary_terms": ["difficulty_trusting", "self_reliance", "attachment_injury"],
+    "strengths": ["Strongly independent", "Careful and discerning about people", "Self-sufficient"],
+    "future": "Trust can be rebuilt slowly, in relationships that prove safe over time.",
+    "reflection": "Who in your life has earned a little more of your trust than you usually give?"
+  },
+  {
+    "id": "responsibility_overload",
+    "title": "Responsibility Overload",
+    "nodes": {
+      "pattern": "Carrying responsibility for people and outcomes beyond your own",
+      "emotion": "Guilt or anxiety when you're not holding things together",
+      "adaptation": "Becoming the dependable one others rely on",
+      "origin": "Growing up taking on adult roles before you were ready"
+    },
+    "glossary_terms": ["parentification", "responsibility_overload", "over_functioning"],
+    "strengths": ["Capable and organized", "Deeply dependable", "A natural caretaker and leader"],
+    "future": "Responsibility can be shared, and rest can become something you're allowed to have.",
+    "reflection": "What is one thing you carry that isn't actually yours to hold?"
+  },
+  {
+    "id": "conflict_avoidance",
+    "title": "Conflict Avoidance",
+    "nodes": {
+      "pattern": "Steering away from friction or difficult conversations",
+      "emotion": "Discomfort or dread around disagreement",
+      "adaptation": "Avoiding conflict to keep relationships stable",
+      "origin": "Homes where conflict felt dangerous or destabilizing"
+    },
+    "glossary_terms": ["conflict_avoidance", "fawn_response", "emotional_safety"],
+    "strengths": ["Diplomatic", "Calming presence", "Good at finding common ground"],
+    "future": "Conflict can become something you can navigate, not only escape.",
+    "reflection": "What is a small thing you've been avoiding saying to someone?"
+  },
+  {
+    "id": "overachievement",
+    "title": "Achievement-Based Self-Worth",
+    "nodes": {
+      "pattern": "Measuring your worth by what you accomplish",
+      "emotion": "A worry that resting or stopping makes you less valuable",
+      "adaptation": "Earning approval and security through achievement",
+      "origin": "Environments where being 'enough' depended on performance"
+    },
+    "glossary_terms": ["achievement_based_worth", "perfectionism", "conditional_acceptance"],
+    "strengths": ["Driven and disciplined", "High standards", "Resilient and hardworking"],
+    "future": "Your worth can settle into something you simply have, separate from what you produce.",
+    "reflection": "Who would you be if you achieved nothing this week — and is that person still worthy of care?"
+  },
+  {
+    "id": "difficulty_resting",
+    "title": "Difficulty Resting",
+    "nodes": {
+      "pattern": "Struggling to slow down or switch off",
+      "emotion": "Restlessness or guilt during stillness",
+      "adaptation": "Staying busy to stay safe, useful, or distracted",
+      "origin": "Times when stopping felt unsafe or unaffordable"
+    },
+    "glossary_terms": ["difficulty_resting", "nervous_system_activation", "hyperfunctioning"],
+    "strengths": ["Energetic and productive", "Resourceful", "Rarely gives up"],
+    "future": "Rest can become a place of safety rather than a threat to manage.",
+    "reflection": "What does your body do when you finally allow it to rest?"
+  }
+]

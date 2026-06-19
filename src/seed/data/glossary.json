@@ -1,0 +1,162 @@
+[
+  {
+    "id": "hypervigilance",
+    "term": "Hypervigilance",
+    "definition": "A heightened state of alertness where you continuously scan for threat.",
+    "description": "When earlier environments felt unsafe, the nervous system can learn to stay 'on,' watching for danger even when none is present.",
+    "common_signs": ["Difficulty relaxing", "Startling easily", "Reading rooms for danger", "Trouble sleeping"],
+    "related_concepts": ["nervous_system_activation", "safety_seeking"],
+    "reflection_question": "When do you notice your guard going up the most?",
+    "related_trace_maps": ["hypervigilance"]
+  },
+  {
+    "id": "people_pleasing",
+    "term": "People Pleasing",
+    "definition": "Prioritizing others' approval and comfort over your own needs.",
+    "description": "Often a way of maintaining safety and connection in relationships where acceptance felt conditional.",
+    "common_signs": ["Difficulty saying no", "Over-apologizing", "Suppressing your own preferences"],
+    "related_concepts": ["fawn_response", "conditional_acceptance"],
+    "reflection_question": "Whose approval feels hardest to risk losing?",
+    "related_trace_maps": ["people_pleasing"]
+  },
+  {
+    "id": "fawn_response",
+    "term": "Fawn Response",
+    "definition": "A stress response of appeasing or accommodating to defuse perceived threat.",
+    "description": "One of several survival responses (alongside fight, flight, and freeze) where safety is sought through pleasing others.",
+    "common_signs": ["Reflexive agreement", "Merging with others' wants", "Discomfort with conflict"],
+    "related_concepts": ["people_pleasing", "conflict_avoidance"],
+    "reflection_question": "What happens inside you when someone is displeased?",
+    "related_trace_maps": ["people_pleasing", "conflict_avoidance"]
+  },
+  {
+    "id": "emotional_suppression",
+    "term": "Emotional Suppression",
+    "definition": "Pushing emotions down rather than experiencing or expressing them.",
+    "description": "A protective habit formed where emotions were dismissed, mocked, or unsafe to show.",
+    "common_signs": ["Feeling numb", "Difficulty naming feelings", "Intellectualizing emotion"],
+    "related_concepts": ["alexithymia", "emotional_invalidation"],
+    "reflection_question": "What feeling do you find hardest to let yourself have?",
+    "related_trace_maps": ["emotional_suppression"]
+  },
+  {
+    "id": "alexithymia",
+    "term": "Alexithymia",
+    "definition": "Difficulty identifying and describing your own emotions.",
+    "description": "Can develop when emotional language and attunement were absent in early life.",
+    "common_signs": ["Confusion about feelings", "Focus on physical sensations", "Difficulty answering 'how do you feel?'"],
+    "related_concepts": ["emotional_suppression"],
+    "reflection_question": "Where in your body do you first notice a feeling?",
+    "related_trace_maps": ["emotional_suppression"]
+  },
+  {
+    "id": "difficulty_trusting",
+    "term": "Difficulty Trusting Others",
+    "definition": "A protective wariness about depending on or opening up to others.",
+    "description": "Often follows early relationships where trust was broken or unreliable.",
+    "common_signs": ["Keeping people at arm's length", "Expecting betrayal", "Strong self-reliance"],
+    "related_concepts": ["self_reliance", "attachment_injury"],
+    "reflection_question": "What would someone need to do to earn your trust?",
+    "related_trace_maps": ["difficulty_trusting"]
+  },
+  {
+    "id": "attachment_injury",
+    "term": "Attachment Injury",
+    "definition": "A wound to the sense of safety in close relationships.",
+    "description": "Results from moments where a key person was unavailable, frightening, or unreliable when needed.",
+    "common_signs": ["Fear of abandonment", "Difficulty with closeness", "Push-pull in relationships"],
+    "related_concepts": ["difficulty_trusting"],
+    "reflection_question": "When did you first learn that closeness could hurt?",
+    "related_trace_maps": ["difficulty_trusting"]
+  },
+  {
+    "id": "parentification",
+    "term": "Parentification",
+    "definition": "Taking on adult roles and responsibilities as a child.",
+    "description": "Common where caregivers were absent, unwell, or overwhelmed, and a child stepped in.",
+    "common_signs": ["Over-responsibility", "Discomfort being cared for", "Guilt when resting"],
+    "related_concepts": ["responsibility_overload", "over_functioning"],
+    "reflection_question": "What did you have to grow up faster to handle?",
+    "related_trace_maps": ["responsibility_overload"]
+  },
+  {
+    "id": "responsibility_overload",
+    "term": "Responsibility Overload",
+    "definition": "Carrying more responsibility for others and outcomes than is yours to hold.",
+    "description": "Often rooted in early roles where being capable kept you or others safe.",
+    "common_signs": ["Difficulty delegating", "Feeling indispensable", "Burnout"],
+    "related_concepts": ["parentification", "over_functioning"],
+    "reflection_question": "What would you put down if you believed it was safe to?",
+    "related_trace_maps": ["responsibility_overload"]
+  },
+  {
+    "id": "over_functioning",
+    "term": "Over-Functioning",
+    "definition": "Habitually doing, fixing, and managing beyond what's needed.",
+    "description": "A way of securing control and worth, especially where things once felt out of control.",
+    "common_signs": ["Trouble resting", "Taking over tasks", "Anxiety when idle"],
+    "related_concepts": ["responsibility_overload", "hyperfunctioning"],
+    "reflection_question": "What are you afraid would happen if you did less?",
+    "related_trace_maps": ["responsibility_overload", "difficulty_resting"]
+  },
+  {
+    "id": "conflict_avoidance",
+    "term": "Conflict Avoidance",
+    "definition": "Avoiding disagreement or confrontation to preserve calm.",
+    "description": "Develops where conflict felt dangerous or destabilizing growing up.",
+    "common_signs": ["Withholding opinions", "Smoothing things over", "Resentment buildup"],
+    "related_concepts": ["fawn_response", "emotional_safety"],
+    "reflection_question": "What do you fear conflict will cost you?",
+    "related_trace_maps": ["conflict_avoidance"]
+  },
+  {
+    "id": "achievement_based_worth",
+    "term": "Achievement-Based Self-Worth",
+    "definition": "Tying your value as a person to what you accomplish.",
+    "description": "Common where approval or security depended on performance.",
+    "common_signs": ["Never feeling 'enough'", "Difficulty celebrating wins", "Fear of failure"],
+    "related_concepts": ["perfectionism", "conditional_acceptance"],
+    "reflection_question": "What would make you worthy even if you achieved nothing?",
+    "related_trace_maps": ["overachievement"]
+  },
+  {
+    "id": "perfectionism",
+    "term": "Perfectionism",
+    "definition": "Holding rigidly high standards and fearing mistakes.",
+    "description": "Can be a strategy to avoid criticism, rejection, or shame.",
+    "common_signs": ["Procrastination", "Harsh self-criticism", "All-or-nothing thinking"],
+    "related_concepts": ["achievement_based_worth"],
+    "reflection_question": "Whose standard are you actually trying to meet?",
+    "related_trace_maps": ["overachievement"]
+  },
+  {
+    "id": "difficulty_resting",
+    "term": "Difficulty Resting",
+    "definition": "Struggling to slow down, relax, or stop being productive.",
+    "description": "Often where stillness once felt unsafe, unproductive, or unaffordable.",
+    "common_signs": ["Restlessness", "Guilt when relaxing", "Staying busy to cope"],
+    "related_concepts": ["nervous_system_activation", "hyperfunctioning"],
+    "reflection_question": "What comes up for you in moments of stillness?",
+    "related_trace_maps": ["difficulty_resting"]
+  },
+  {
+    "id": "nervous_system_activation",
+    "term": "Nervous System Activation",
+    "definition": "The body's state of heightened arousal in response to perceived threat.",
+    "description": "Chronic stress can keep the nervous system primed, affecting sleep, focus, and mood.",
+    "common_signs": ["Racing thoughts", "Muscle tension", "Trouble winding down"],
+    "related_concepts": ["hypervigilance", "difficulty_resting"],
+    "reflection_question": "What helps your body feel a little calmer?",
+    "related_trace_maps": ["hypervigilance", "difficulty_resting"]
+  },
+  {
+    "id": "conditional_acceptance",
+    "term": "Conditional Acceptance",
+    "definition": "Learning that love or approval depends on meeting certain expectations.",
+    "description": "Shapes a belief that you must earn belonging rather than simply having it.",
+    "common_signs": ["Fear of disappointing others", "Performing for approval", "Hiding parts of yourself"],
+    "related_concepts": ["people_pleasing", "achievement_based_worth"],
+    "reflection_question": "Where do you feel accepted exactly as you are?",
+    "related_trace_maps": ["people_pleasing", "overachievement"]
+  }
+]

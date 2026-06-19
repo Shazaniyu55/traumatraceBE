@@ -1,0 +1,94 @@
+{
+  "stressors": [
+    { "id": "work", "label": "Work" },
+    { "id": "school", "label": "School" },
+    { "id": "finances", "label": "Finances" },
+    { "id": "family", "label": "Family" },
+    { "id": "relationships", "label": "Relationships" },
+    { "id": "parenting", "label": "Parenting" },
+    { "id": "health", "label": "Health" },
+    { "id": "grief", "label": "Grief" },
+    { "id": "uncertainty", "label": "Uncertainty about the future" }
+  ],
+  "coping_questions": [
+    {
+      "id": "c1",
+      "prompt": "When something is bothering you, what is your usual first move?",
+      "options": [
+        { "id": "c1_scan", "label": "I scan for what might go wrong and prepare" },
+        { "id": "c1_others_first", "label": "I focus on keeping everyone else okay first" },
+        { "id": "c1_push_down", "label": "I push the feeling down and carry on" },
+        { "id": "c1_alone", "label": "I handle it alone; I don't expect help" }
+      ]
+    },
+    {
+      "id": "c2",
+      "prompt": "When someone is upset with you, you tend to...",
+      "options": [
+        { "id": "c2_replay", "label": "Replay it over and over, watching for danger" },
+        { "id": "c2_apologize", "label": "Apologize quickly, even if unsure it's my fault" },
+        { "id": "c2_avoid", "label": "Go quiet and avoid the conversation" },
+        { "id": "c2_pullback", "label": "Feel it threatens everything and pull back" }
+      ]
+    },
+    {
+      "id": "c3",
+      "prompt": "How do you usually relate to rest and downtime?",
+      "options": [
+        { "id": "c3_guilty", "label": "I feel guilty or restless when I'm not productive" },
+        { "id": "c3_others_first", "label": "I can't relax until everyone else is taken care of" },
+        { "id": "c3_earned", "label": "I rest only when I've 'earned' it" },
+        { "id": "c3_alert", "label": "I find it hard to switch off; I stay alert" }
+      ]
+    },
+    {
+      "id": "c4",
+      "prompt": "When you achieve something, how does it feel?",
+      "options": [
+        { "id": "c4_next", "label": "Good briefly, then I'm onto the next thing" },
+        { "id": "c4_relief", "label": "Like relief more than joy" },
+        { "id": "c4_downplay", "label": "I downplay it; it wasn't a big deal" },
+        { "id": "c4_expectations", "label": "I worry it raises expectations I must keep meeting" }
+      ]
+    },
+    {
+      "id": "c5",
+      "prompt": "In close relationships, you most often...",
+      "options": [
+        { "id": "c5_guarded", "label": "Keep a part of myself guarded" },
+        { "id": "c5_their_needs", "label": "Put their needs ahead of my own" },
+        { "id": "c5_no_friction", "label": "Avoid bringing up things that might cause friction" },
+        { "id": "c5_responsible", "label": "Feel responsible for their wellbeing" }
+      ]
+    },
+    {
+      "id": "c6",
+      "prompt": "When strong emotions come up, you...",
+      "options": [
+        { "id": "c6_analyze", "label": "Analyze them rather than feel them" },
+        { "id": "c6_contain", "label": "Worry they'll overwhelm me, so I contain them" },
+        { "id": "c6_channel", "label": "Channel them into doing or fixing something" },
+        { "id": "c6_watch", "label": "Stay watchful of how others are reacting" }
+      ]
+    },
+    {
+      "id": "c7",
+      "prompt": "How often do you feel 'on guard,' even when things are calm?",
+      "options": [
+        { "id": "c7_often", "label": "Often" },
+        { "id": "c7_sometimes", "label": "Sometimes" },
+        { "id": "c7_rarely", "label": "Rarely" }
+      ]
+    },
+    {
+      "id": "c8",
+      "prompt": "When you need help, you...",
+      "options": [
+        { "id": "c8_rarely_ask", "label": "Rarely ask; I'd rather not depend on anyone" },
+        { "id": "c8_manage_alone", "label": "Feel I should be able to manage alone" },
+        { "id": "c8_burden", "label": "Worry about being a burden" },
+        { "id": "c8_ask_easily", "label": "Ask easily" }
+      ]
+    }
+  ]
+}

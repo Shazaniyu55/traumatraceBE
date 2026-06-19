@@ -1,0 +1,57 @@
+{
+  "intro": "These questions ask about your early life. They are grounded in the Violence Against Children Surveys (VACS) framework rather than the Western ACE questionnaire. Answer at your own pace. You can stop at any time. Nothing here is a test, and there are no wrong answers.",
+  "framework": "VACS",
+  "questions": [
+    {
+      "id": "ch1",
+      "prompt": "Growing up, did you often feel that your emotional needs went unnoticed by the adults around you?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch2",
+      "prompt": "As a child, were you frequently criticized, insulted, or made to feel worthless by someone in your home?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch3",
+      "prompt": "Before age 18, were you ever physically hurt by an adult in a way that left marks or lasting fear?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch4",
+      "prompt": "Growing up, did you often go without basic needs being met (food, supervision, medical care) even when adults could have provided them?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch5",
+      "prompt": "As a child, did you witness violence or frequent serious conflict between adults in your home?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch6",
+      "prompt": "Before age 18, did you experience the loss or prolonged absence of a parent or primary caregiver (through death, separation, or migration for work)?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch7",
+      "prompt": "Growing up, were you expected to take on adult responsibilities (caring for siblings, working, or running the household) before you felt ready?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch8",
+      "prompt": "As a child, did you experience violence or harsh treatment in places that were meant to be safe, such as school or your community?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch9",
+      "prompt": "Before age 18, did anyone make you feel unsafe through unwanted sexual words, attention, or contact?",
+      "reverse_scored": false
+    },
+    {
+      "id": "ch10",
+      "prompt": "Growing up, was there at least one adult you felt safe with — someone you could turn to who made you feel cared for?",
+      "reverse_scored": true,
+      "note": "Protective factor. A 'No' answer adds 1 point."
+    }
+  ]
+}
