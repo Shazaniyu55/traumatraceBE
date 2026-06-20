@@ -24,6 +24,10 @@ export class User {
   @Column({ nullable: true })
   displayName: string;
 
+  // Profile picture URL. The app uploads the image and sends us the URL.
+  @Column({ nullable: true })
+  photoUrl: string;
+
   // Firebase Cloud Messaging token for push notifications.
   @Column({ nullable: true })
   fcmToken: string;

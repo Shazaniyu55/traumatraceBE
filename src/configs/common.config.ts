@@ -29,6 +29,10 @@ export default registerAs('common', () => ({
     durationMinutes: toNumber(process.env.OTP_DURATION_MINUTES, 10),
   },
 
+  google: {
+  mapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+},
+
    /** Kill switch codes — loaded from Vault in production */
   killSwitch: {
     deactivationCode: process.env.KILL_SWITCH_DEACTIVATION_CODE,
