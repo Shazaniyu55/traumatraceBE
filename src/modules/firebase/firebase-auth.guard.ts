@@ -2,7 +2,7 @@ import {
   CanActivate, ExecutionContext, Injectable, UnauthorizedException,
 } from '@nestjs/common';
 import { FirebaseService } from './firebase.service';
-import { UsersService } from '../users/users.service';
+import { UsersService } from '../users/service/users.service';
 
 /**
  * Verifies the "Authorization: Bearer <firebase-id-token>" header, then
