@@ -1,14 +1,72 @@
-import { NestFactory } from '@nestjs/core';
-import { ValidationPipe } from '@nestjs/common';
 import { AppModule } from './app.module';
+import { Logger } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { NestFactory } from '@nestjs/core';
+import { NestExpressApplication } from '@nestjs/platform-express';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { ResponseInterceptor } from './shared/interceptors/response.interceptor';
+import { CustomFieldValidationPipe } from './shared/validations/custom.validation';
+import * as dotenv from 'dotenv';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  app.setGlobalPrefix('api');
-  app.enableCors();
-  app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
-  const port = process.env.PORT ?? 3000;
-  await app.listen(port);
-  console.log(`TraumaTrace API running on :${port}/api`);
+   dotenv.config();
+
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+const configService = app.get(ConfigService);
+  const { port, swaggerApiRoot } = configService.get('common');
+
+  const PRODUCT_NAME = 'TraumaTrace Backend Service';
+  const PRODUCT_TAG = 'TraumaTrace Backend Service';
+  const PRODUCT_VERSION = '2.0.0';
+
+  // Determine the allowed origins
+  const whitelist = configService
+    .get<string>('CORS_WHITELIST')
+    .split(',')
+    .map((pattern) => new RegExp(pattern));
+
+  // Enable localhost on dev/staging servers only
+  if ([undefined, 'development', 'localhost'].includes(process.env.NODE_ENV)) {
+    // whitelist.push(/http(s)?:\/\/localhost:3000/);
+    whitelist.push(/http(s)?:\/\/localhost:/);
+  }
+
+  Logger.log(`Approved domains: ${whitelist.join(',')}`);
+
+  // Set cors options
+  const options = {
+    origin: whitelist,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    allowedHeaders: [
+      'Origin',
+      'X-Requested-With',
+      'Content-Type',
+      'Accept',
+      'Authorization',
+      'Cache-control',
+    ],
+    credentials: true,
+  };
+
+  app.enableCors(options);
+  app.useGlobalInterceptors(new ResponseInterceptor());
+  // Enable global validation pipe
+  app.useGlobalPipes(CustomFieldValidationPipe);
+
+  const swaggerOptions = new DocumentBuilder()
+    .setTitle(`${PRODUCT_NAME} API Documentation`)
+    .setDescription(`List of all the APIs for ${PRODUCT_NAME}.`)
+    .setVersion(PRODUCT_VERSION)
+    .addTag(PRODUCT_TAG)
+    .addBearerAuth()
+    .build();
+
+  const document = SwaggerModule.createDocument(app, swaggerOptions);
+  SwaggerModule.setup(swaggerApiRoot, app, document);
+
+  await app.listen(process.env.PORT || port);
+  Logger.log(
+    `${PRODUCT_NAME} core service running on port ${port}: visit http://localhost:${port}/${swaggerApiRoot}`,
+  );
 }
 bootstrap();
