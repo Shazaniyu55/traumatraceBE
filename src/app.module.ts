@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { FirebaseModule } from './modules/firebase/firebase.module';
-import { FirebaseAuthGuard } from './modules/firebase/firebase-auth.guard';
 import { UsersModule } from './modules/users/users.module';
 import { AssessmentsModule } from './modules/assessments/assessments.module';
 import { ReportsModule } from './modules/reports/reports.module';
@@ -20,6 +19,7 @@ import { Broker } from './broker/broker';
 import { CoreModule } from './modules/core/core.module';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { APP_GUARD } from '@nestjs/core';
+import { CloudinaryModule } from '@modules/cloudinary/cloudinary.module';
 
 
 @Module({
@@ -47,6 +47,7 @@ import { APP_GUARD } from '@nestjs/core';
     JournalModule,
     TherapistsModule,
     NotificationsModule,
+    CloudinaryModule
   ],
   providers: [
     Broker,
@@ -55,9 +56,6 @@ import { APP_GUARD } from '@nestjs/core';
       useClass: ThrottlerGuard,
     },
 
-    // FirebaseAuthGuard is provided per-controller via @UseGuards, but exported
-    // here so DI can resolve UsersService + FirebaseService for it.
-    FirebaseAuthGuard,
   ],
    exports: [Broker],
 })

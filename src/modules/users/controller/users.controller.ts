@@ -19,4 +19,5 @@ export class UsersController {
     await this.users.setFcmToken(req.user.id, fcmToken);
     return { ok: true };
   }
+
 }

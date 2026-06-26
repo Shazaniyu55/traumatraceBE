@@ -7,10 +7,13 @@ export class UsersService {
     private readonly userRepository: UserRepository,
   ) {}
 
+  async createUser(data: { firebaseUid: string; email?: string; displayName?: string }){
+    await this.userRepository.createUser(data)
+  }
 async upsertFromFirebase(data: {
   firebaseUid: string;
-  email: string;
-  displayName: string;
+  email?: string;
+  displayName?: string;
 }) {
   return this.userRepository.upsertFromFirebase(data);
 }

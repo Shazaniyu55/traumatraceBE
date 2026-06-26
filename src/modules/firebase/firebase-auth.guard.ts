@@ -26,12 +26,15 @@ export class FirebaseAuthGuard implements CanActivate {
       const decoded = await this.firebase.auth.verifyIdToken(idToken);
       const user = await this.users.upsertFromFirebase({
         firebaseUid: decoded.uid,
-        email: decoded.email,
-        displayName: decoded.name,
+        email: decoded.email ?? '',
+        displayName: decoded.name ?? '',
       });
       req.user = user;
       return true;
-    } catch {
+    } catch(err) {
+      
+  console.error('FirebaseAuthGuard error:', err); // ← add this
+ 
       throw new UnauthorizedException('Invalid token');
     }
   }
