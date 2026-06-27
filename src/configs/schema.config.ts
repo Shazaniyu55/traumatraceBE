@@ -77,15 +77,15 @@ export default {
     RESEND_FROM_EMAIL: optionalString,
 
     // Runtime (injected by container/shell)
-    HOME: requiredString,
-    HOSTNAME: requiredString,
-    NODE_OPTIONS: optionalString,
-    NODE_VERSION: requiredString,
-    PATH: requiredString,
-    PWD: requiredString,
-    SHLVL: requiredNumber,
-    TERM: optionalString,
-    YARN_VERSION: optionalString,
+    // HOME: requiredString,
+    // HOSTNAME: requiredString,
+    // NODE_OPTIONS: optionalString,
+    // NODE_VERSION: requiredString,
+    // PATH: requiredString,
+    // PWD: requiredString,
+    // SHLVL: requiredNumber,
+    // TERM: optionalString,
+    // YARN_VERSION: optionalString,
 
     // Optional services
     MONGO_DB_URL: optionalString,
