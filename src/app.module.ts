@@ -19,7 +19,7 @@ import { Broker } from './broker/broker';
 import { CoreModule } from './modules/core/core.module';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { APP_GUARD } from '@nestjs/core';
-import { CloudinaryModule } from '@modules/cloudinary/cloudinary.module';
+import { CloudinaryModule } from './modules/cloudinary/cloudinary.module';
 
 
 @Module({
