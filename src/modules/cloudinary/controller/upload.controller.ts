@@ -3,7 +3,7 @@ import { Controller, Post, UploadedFile, UseGuards, UseInterceptors } from '@nes
 import { FileInterceptor } from '@nestjs/platform-express';
 
 import { CloudinaryService } from '../services/cloudinary.service';
-import { JwtAuthGuard } from '@shared/guards/jwt-auth.guard';
+import { JwtAuthGuard } from '../../../shared/guards/jwt-auth.guard';
 
 @UseGuards(JwtAuthGuard)
 @Controller('upload')

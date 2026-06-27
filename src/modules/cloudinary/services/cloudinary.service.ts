@@ -17,7 +17,7 @@ import {
   CloudinaryDeleteResult,
   CloudinaryUploadOptions,
   CloudinaryUploadResult,
-} from '@shared/interface/upload.interface';
+} from '../../../shared/interface/upload.interface';
 
 @Injectable()
 export class CloudinaryService {

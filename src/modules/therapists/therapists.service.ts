@@ -2,8 +2,8 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Therapist } from '../core/entities/therapist.entity';
-import { GoogleMapsService } from '@modules/googlemap/maps.service';
-import { MailService } from '@modules/mail/mail.service';
+import { GoogleMapsService } from '../../modules/googlemap/maps.service';
+import { MailService } from '../../modules/mail/mail.service';
 import { RegisterTherapistDto } from './dto/register.dto';
 import { ContactTherapistDto } from './dto/contact.dto';
 
