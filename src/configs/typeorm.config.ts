@@ -23,10 +23,10 @@ export const dataSource = {
   migrationsTableName: 'migrations',
   migrations: ['dist/migrations/**/*{.ts,.js}'],
   retryAttempts: parseInt(process.env.DATABASE_RETRY_ATTEMPTS),
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false, // ← changed
-//   ssl: {
-//   rejectUnauthorized: false,
-// },
+  //ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false, // ← changed
+  ssl: {
+  rejectUnauthorized: false,
+},
 };
 
 export default registerAs('typeorm', () => dataSource);
