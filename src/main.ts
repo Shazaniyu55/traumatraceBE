@@ -62,7 +62,12 @@ const configService = app.get(ConfigService);
     .build();
 
   const document = SwaggerModule.createDocument(app, swaggerOptions);
-  SwaggerModule.setup(swaggerApiRoot, app, document);
+  SwaggerModule.setup(swaggerApiRoot, app, document, {
+    jsonDocumentUrl: 'docs-json',
+    swaggerOptions:{
+      persistAuthorization: true,
+    }
+  });
 
   await app.listen(process.env.PORT || port);
   Logger.log(
