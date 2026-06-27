@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "TraumaTrace API — NestJS + TypeORM + Postgres + Firebase",
   "scripts": {
-    "build": "nest build",
+    "build": "nest build && tsc-alias",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:prod": "node dist/main.js",
@@ -15,7 +15,6 @@
     "migration:create": "npm run typeorm -- migration:create ./src/migrations/$npm_config_name",
     "migration:revert": "npm run typeorm -- -d ./src/configs/typeorm.config.ts migration:revert",
     "vercel-build": "npm run build"
-
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
@@ -50,6 +49,7 @@
     "@types/multer": "^2.1.0",
     "@types/node": "^20.11.0",
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.17",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
   }
