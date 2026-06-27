@@ -62,12 +62,23 @@ const configService = app.get(ConfigService);
     .build();
 
   const document = SwaggerModule.createDocument(app, swaggerOptions);
+  // SwaggerModule.setup(swaggerApiRoot, app, document, {
+  //   jsonDocumentUrl: 'docs-json',
+  //   swaggerOptions:{
+  //     persistAuthorization: true,
+  //   }
+  // });
   SwaggerModule.setup(swaggerApiRoot, app, document, {
-    jsonDocumentUrl: 'docs-json',
-    swaggerOptions:{
-      persistAuthorization: true,
-    }
-  });
+  jsonDocumentUrl: 'docs-json',
+  customCssUrl: 'https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui.css',
+  customJs: [
+    'https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-bundle.js',
+    'https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-standalone-preset.js',
+  ],
+  swaggerOptions: {
+    persistAuthorization: true,
+  },
+});
 
   await app.listen(process.env.PORT || port);
   Logger.log(
